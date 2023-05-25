@@ -1,0 +1,149 @@
+/*Roboto, Orbitron Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+:root{
+  /*colors*/
+  --col-white:rgba(255,255,255,1); 
+  --col-shadow:#ff318f;
+  --col-orange:#FA7C64;
+  --col-pink:#F161A3;
+  --col-dark-blue:#1F2543;
+  --col-gift-background:#1f254314;
+  --col-background: #EBEBF3;
+
+  /*fonts*/
+  --orbitron:'Orbitron', sans-serif;
+  --roboto:'Roboto', sans-serif;
+}
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+body{
+  width: 100%;
+  font-family: var(--roboto);
+  color: var(--col-dark-blue);
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, var(--col-pink),#fa7c642e),url(../images/sagar-patil-8UcNYpynFLU-unsplash.jpg);
+  background-size: cover;
+}
+.container{
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--col-white);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 11px 7px 0px #e91e6354;
+}
+
+/*----------------------------
+-------BIRTHDAY INFO----------
+-----------------------------*/
+.user-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid var(--col-dark-blue);
+  padding-bottom: 1rem;
+}
+.main-title{
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--col-dark-blue);
+}
+.user-img{
+  margin-block: 2rem;
+  border: 7px solid var(--col-pink);
+  transform: rotate(343deg);
+  border-radius: 13px;
+  box-shadow: 11px 7px 0px var(--col-shadow);
+  width: 125px;
+}
+
+/*----------------------------
+---------GIFT BOXES-----------
+-----------------------------*/
+.gift-box{
+  margin-block: 2rem;
+  padding: 2rem;
+  background-color: var(--col-gift-background);
+  border-radius: 10px;
+  width: 100%;
+}
+.gift-title{
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.gift-hint{
+  font-size: 0.8rem;
+  margin-top: 7px;
+}
+.img-gift-box{
+  width: 350px;
+  height: 350px;
+  background-image: url("../images/gift-cover.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin:2.5rem  auto;
+  transition: background-image 0.7s ease-in-out;
+  cursor: pointer;
+}
+.happy-for-you:hover{
+  background-image: url("../images/happy.gif");
+}
+.people-react:hover{
+  background-image: url("../images/hot.gif");
+}
+.one-word:hover{
+  background-image: url("../images/genius.gif");
+}
+.badass:hover{
+  background-image: url("../images/badass.gif");
+}
+
+/*----------------------------
+------------MEDIA-------------
+-----------------------------*/
+@media (max-width:550px){
+  body{
+    padding: 1rem;
+  }
+  .container{
+    width: 95%;
+  }
+  .user-info{
+    padding: 1.5rem 0.7rem;
+  }
+  .main-title{
+    font-size: 2rem;
+  }
+  .gift-title{
+    font-size: 1.3rem;
+  }
+  .gift-box{
+    margin-block: 1rem;
+    padding: 1rem;
+  }
+  .img-gift-box{
+    width: 100%;
+    height: 295px;
+    margin: 1.2rem auto;
+  }
+}
+@media (max-width:370px){
+  .container{
+   padding: 1rem;
+  }
+  .img-gift-box{
+    height: 225px;
+  }
+}
